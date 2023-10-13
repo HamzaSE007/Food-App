@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "491915703780",
+    "firebase_url": "https://magic-food-app-default-rtdb.firebaseio.com",
+    "project_id": "magic-food-app",
+    "storage_bucket": "magic-food-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491915703780:android:5500fbd2ea6632556c03f1",
+        "android_client_info": {
+          "package_name": "com.example.magic_food_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491915703780-4v2fg4mag76dv754rscqjb38vpdk0qcu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.magic_food_app",
+            "certificate_hash": "e4d556cc8ddf0d66b3ea200f7f2b36be712169c2"
+          }
+        },
+        {
+          "client_id": "491915703780-6r9m40qhjuag5osr4mge97dtidqlfosa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkYfgtvK_FnLFKt0A0ntNe2RZqbSehQ4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491915703780-2tlvf0e0ovu50san8m8ded8hlmtuct8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

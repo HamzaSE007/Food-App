@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayOut_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:cardElevation="6dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="20dp"
+
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payout_title"
+                android:text="Enter Detail"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                android:fontFamily="@font/koho_medium_italic"
+                android:textColor="#43A047"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payout_name_tv"
+                android:layout_below="@+id/payout_title"
+                android:text="Name"
+                android:layout_marginTop="30dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:id="@+id/payout_name_ed"
+                android:layout_below="@+id/payout_name_tv"
+                android:padding="8dp"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Name"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:drawableStart="@drawable/baseline_person_24" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payout_password_tv"
+                android:layout_below="@+id/payout_name_ed"
+                android:text="Phone"
+                android:layout_marginTop="25dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:id="@+id/payout_phone_ed"
+                android:layout_below="@+id/payout_password_tv"
+                android:padding="8dp"
+                android:inputType="number"
+                android:hint="Enter phone"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:drawableStart="@drawable/baseline_phone_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payout_adress_tv"
+                android:layout_below="@+id/payout_phone_ed"
+                android:text="Adress"
+                android:layout_marginTop="25dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:elevation="5dp"
+                android:id="@+id/payout_adress_ed"
+                android:layout_below="@+id/payout_adress_tv"
+                android:padding="8dp"
+                android:inputType="text"
+                android:hint="Enter Adress"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:drawableStart="@drawable/baseline_home_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_tv"
+                android:text="Payment Method"
+                android:layout_below="@+id/payout_adress_ed"
+                android:layout_marginTop="20dp"
+                android:textSize="25dp"
+                android:fontFamily="@font/koho_medium_italic"
+                android:textColor="@color/black"
+                />
+            <LinearLayout
+                android:id="@+id/payout_ll"
+                android:layout_below="@+id/payment_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:weightSum="2"
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/google_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:elevation="5dp"
+                    android:layout_weight="1"
+                    android:text="Google Pay"
+                    android:layout_margin="10dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/border"
+                    android:drawableLeft="@drawable/paymentmethod_googlepay"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/visa_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:elevation="5dp"
+                    android:text="Visa Pay"
+                    android:textAllCaps="false"
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/paymentmethod_visa"
+                    android:background="@drawable/border"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cod_payment"
+                android:layout_below="@+id/payout_ll"
+                android:text="Cash On Delivery"
+                android:textSize="18dp"
+                android:fontFamily="@font/lato_bold"
+
+                android:layout_marginTop="15dp"
+                />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/payout_radioGroup"
+                android:layout_below="@+id/cod_payment"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+
+                    android:id="@+id/rb_yes"
+                    android:layout_marginLeft="20dp"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rb_no"
+
+                    android:layout_marginLeft="25dp"
+                    />
+
+            </RadioGroup>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/cod_btn"
+                android:layout_below="@+id/cod_payment"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/cashondelivery1"
+                android:layout_marginLeft="10dp"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/placeOrder_btn"
+               android:layout_below="@+id/cod_btn"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:text="Place My Order"
+                android:textColor="#43A047"
+                android:textSize="23dp"
+                android:fontFamily="@font/lato_bold"
+                android:background="@drawable/border"
+                android:elevation="5dp"/>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</ScrollView>

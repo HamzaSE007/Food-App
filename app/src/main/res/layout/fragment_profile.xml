@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:cardElevation="6dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="20dp"
+
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_title"
+                android:text="Update Information"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                android:fontFamily="@font/koho_medium_italic"
+                android:textColor="#43A047"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_name_tv"
+                android:layout_below="@+id/reg_title"
+                android:text="Name"
+                android:layout_marginTop="40dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:id="@+id/reg_name_ed"
+                android:layout_below="@+id/reg_name_tv"
+                android:padding="8dp"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Name"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:drawableStart="@drawable/baseline_person_24" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_email_tv"
+                android:layout_below="@+id/reg_name_ed"
+                android:text="Email"
+                android:layout_marginTop="25dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:id="@+id/reg_email_ed"
+                android:layout_below="@+id/reg_email_tv"
+                android:padding="8dp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/enter_email"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:drawableStart="@drawable/baseline_email_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_password_tv"
+                android:layout_below="@+id/reg_email_ed"
+                android:text="Phone"
+                android:layout_marginTop="25dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:id="@+id/reg_password_ed"
+                android:layout_below="@+id/reg_password_tv"
+                android:padding="8dp"
+                android:inputType="numberPassword"
+                android:hint="Enter phone"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:drawableStart="@drawable/baseline_phone_24" />
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_adress_tv"
+                android:layout_below="@+id/reg_password_ed"
+                android:text="Adress"
+                android:layout_marginTop="25dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:elevation="5dp"
+                android:id="@+id/reg_adress_ed"
+                android:layout_below="@+id/reg_adress_tv"
+                android:padding="8dp"
+                android:inputType="text"
+                android:hint="Enter Adress"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:drawableStart="@drawable/baseline_home_24" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_btn"
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="false"
+                android:text="Save Information"
+                android:textColor="#43A047"
+                android:textSize="23dp"
+                android:fontFamily="@font/lato_bold"
+                android:background="@drawable/border"
+                android:elevation="5dp"/>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_title"
+        android:fontFamily="@font/aclonica"
+        android:text="Cart"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rateview"
+        android:id="@+id/cart_rv"
+        android:layout_below="@+id/cart_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="#880E4F"
+        android:id="@+id/rateview"
+        android:textSize="20sp"
+        android:fontFamily="@font/lato_bold"
+        android:layout_above="@+id/cart_btn_proceed"
+        android:layout_centerHorizontal="true"
+        android:text="Total Amount : $ 60"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:id="@+id/cart_btn_proceed"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Proceed"
+        android:textSize="25sp"
+        android:textColor="#f4f4"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_back"
+        android:elevation="5dp"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Activity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:lottie_rawRes="@raw/splash"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <TextView
+        android:id="@+id/title_Splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animation_view"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/koho_bold_italic"
+        android:gravity="center_horizontal"
+        android:text="Magic Food"
+        android:textAlignment="center"
+        android:textColor="#43A047"
+        android:textSize="40sp"
+        />
+    <TextView
+        android:id="@+id/des_splash"
+        android:layout_below="@+id/title_Splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Deliever Favorite Food"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="#43A047"
+        />
+
+    <TextView
+        android:id="@+id/creator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/koho"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:text="©Design By\nHamza"
+        android:textAlignment="center"
+        android:textColor="#24AD58"
+        android:textSize="20sp"
+
+        />
+
+</RelativeLayout>

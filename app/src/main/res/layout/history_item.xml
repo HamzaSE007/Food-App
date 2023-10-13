@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="15dp"
+    android:layout_marginBottom="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/historyItem_cardview_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/rv1" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll1"
+            android:layout_toRightOf="@+id/historyItem_cardview_img"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="0dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/historyItem_food_name"
+                android:text="Herbal Pancake"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/historyItem_price"
+                android:text="255"
+                android:textSize="25dp"
+                android:textColor="#15BE77"
+                android:fontFamily="@font/lato_bold"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/history_buyAgain_btn"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:textSize="15dp"
+            android:text="Buy Again"
+            android:background="@drawable/btn_back"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato"
+            android:backgroundTint="#15BE77"
+            android:elevation="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

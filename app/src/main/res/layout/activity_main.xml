@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/footer"
+        app:menu="@menu/footer_item"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/koho_bold_italic"
+        android:text="Explore Your Favorite Food"
+        android:textColor="#388E3C"
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:id="@+id/notification_bell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/main_title"
+        android:backgroundTint="@color/light_gray"
+        android:src="@drawable/bell_01"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_title"
+        android:layout_marginTop="17dp"
+       android:layout_above="@+id/footer"
+        />
+
+
+
+
+</RelativeLayout>

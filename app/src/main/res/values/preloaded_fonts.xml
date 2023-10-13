@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/archivo_black</item>
+        <item>@font/artifika</item>
+        <item>@font/baloo</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/koho</item>
+        <item>@font/koho_bold_italic</item>
+        <item>@font/koho_medium_italic</item>
+        <item>@font/lato</item>
+        <item>@font/lato_bold</item>
+    </array>
+</resources>

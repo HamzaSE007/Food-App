@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ListFragment">
+
+    <TextView
+        android:id="@+id/history_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Buy"
+        android:textSize="25dp"
+        android:fontFamily="@font/aclonica"
+        android:layout_margin="20dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/history_title"
+        android:id="@+id/history_cardView"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/history_cardview_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/rv1" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll1"
+                android:layout_toRightOf="@+id/history_cardview_img"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginLeft="0dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/history_food_name"
+                    android:text="Herbal Pancake"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/history_price"
+                    android:text="255"
+                    android:textSize="25dp"
+                    android:textColor="#15BE77"
+                    android:fontFamily="@font/lato_bold"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/history_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_btn"
+                android:elevation="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/history_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Previously buy"
+        android:textSize="25dp"
+        android:fontFamily="@font/aclonica"
+        android:layout_below="@+id/history_cardView"
+        android:layout_margin="20dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/history_rv"
+        android:layout_below="@+id/history_title2"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+/>
+</RelativeLayout>

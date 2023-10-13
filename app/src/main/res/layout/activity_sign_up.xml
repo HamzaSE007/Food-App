@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".SignUp_Activity">
+
+    <RelativeLayout
+        android:id="@+id/login_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/reg_toolbar"
+            android:background="@drawable/shape_rec"
+
+            >
+
+            <TextView
+                android:id="@+id/login_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/aclonica"
+                />
+
+
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/img_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circule_shape"
+            android:src="@drawable/baseline_vpn_key_24"
+            android:padding="5dp"
+            android:layout_marginTop="85dp"
+            android:layout_centerHorizontal="true"
+
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/login_img"
+            android:layout_below="@+id/reg_toolbar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/app_logo"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#43A047"
+            android:layout_marginBottom="-20dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/login_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:cardElevation="6dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="10dp"
+
+
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reg_title"
+                    android:text="Sign Up Here"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/koho_medium_italic"
+                    android:textColor="#43A047"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reg_name_tv"
+                    android:layout_below="@+id/reg_title"
+                    android:text="Name*"
+                    android:layout_marginTop="30dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:id="@+id/reg_name_ed"
+                    android:layout_below="@+id/reg_name_tv"
+                    android:padding="8dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Enter Name"
+                    android:background="@drawable/border"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:drawableStart="@drawable/baseline_email_24" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reg_email_tv"
+                    android:layout_below="@+id/reg_name_ed"
+                    android:text="@string/email"
+                    android:layout_marginTop="15dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:id="@+id/reg_email_ed"
+                    android:layout_below="@+id/reg_email_tv"
+                    android:padding="8dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/enter_email"
+                    android:background="@drawable/border"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:drawableStart="@drawable/baseline_email_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reg_password_tv"
+                    android:layout_below="@+id/reg_email_ed"
+                    android:text="@string/password"
+                    android:layout_marginTop="15dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:id="@+id/reg_password_ed"
+                    android:layout_below="@+id/reg_password_tv"
+                    android:padding="8dp"
+                    android:inputType="numberPassword"
+                    android:hint="@string/enter_password"
+                    android:background="@drawable/border"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:drawableStart="@drawable/baseline_lock_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reg_choose_TV"
+                    android:layout_below="@+id/reg_password_ed"
+                    android:text="Or\nSign Up With"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/koho"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/reg_ll"
+                    android:layout_below="@+id/reg_choose_TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:weightSum="2"
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/reg_google_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="@string/google"
+                        android:elevation="5dp"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/google_icon2"
+                        />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/reg_fb_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:elevation="5dp"
+                        android:text="@string/facebook"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/facebook_31"
+                        />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="167dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/reg_btn"
+                    android:layout_below="@+id/reg_ll"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:elevation="5dp"
+                    android:text="Create Account"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="19sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/koho_medium_italic"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/btn_bg"
+                    />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/login_progress_bar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reg_login"
+                    android:layout_below="@+id/reg_btn"
+                    android:text="Already Have An Account?"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#388E3C"
+                    android:gravity="center_horizontal" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</ScrollView>

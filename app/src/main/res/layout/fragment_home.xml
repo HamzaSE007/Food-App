@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/card_slider"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       app:cardCornerRadius="10dp"
+       android:layout_marginTop="16dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       >
+       <com.denzcoskun.imageslider.ImageSlider
+           android:id="@+id/image_slider"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:iss_auto_cycle="true"
+           app:iss_period="2000"
+           app:iss_delay="2000"
+           app:iss_text_align="CENTER"/>
+   </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/popular_food"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/card_slider"
+        android:fontFamily="@font/aclonica"
+        android:text="Popular"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/view_menu"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:layout_below="@+id/card_slider"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:background="@drawable/btn_back"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato"
+        android:textColor="#f4f4"
+        android:text="View Menu"
+        android:textSize="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_homeFrag"
+        android:layout_below="@+id/popular_food"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        />
+
+
+</RelativeLayout>

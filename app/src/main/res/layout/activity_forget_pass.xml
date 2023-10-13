@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".Forget_Pass_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/title_fp"
+            android:background="@drawable/shape_rec"
+
+            >
+
+            <TextView
+                android:id="@+id/fp_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="Reset Password"
+
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/img_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_btn"
+            android:src="@drawable/baseline_vpn_key_24"
+            android:padding="5dp"
+            android:layout_marginTop="85dp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/title_fp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="10dp"
+
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                >
+
+
+                <TextView
+                    android:textColor="#43A047"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fp_title"
+                    android:text="Please Enter Your Registered Email"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/lato_bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fp_email_tv"
+                    android:layout_below="@+id/fp_title"
+                    android:text="@string/email"
+                    android:layout_marginTop="40dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fp_email_ed"
+                    android:layout_below="@+id/fp_email_tv"
+                    android:padding="8dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/enter_email"
+                    android:background="@drawable/border"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:drawableStart="@drawable/baseline_email_24"
+                    android:drawablePadding="5dp"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/resetPass_btn"
+                    android:layout_below="@+id/fp_email_ed"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Reset"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/btn_bg"
+                    />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/fp_progress_bar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

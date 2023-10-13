@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_title"
+        android:fontFamily="@font/aclonica"
+        android:text="Search"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchBar"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="What do you want to order?"
+        android:layout_below="@+id/search_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:iconifiedByDefault="false"
+        android:searchIcon="@drawable/icons8_search"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/search_back"
+        />
+    <TextView
+        android:layout_below="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_tv"
+        android:fontFamily="@font/lato_bold"
+        android:text="Menu"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_rv"
+        android:layout_below="@+id/menu_tv"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>
