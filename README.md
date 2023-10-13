@@ -1,5 +1,5 @@
 # Food-App
-#output
+# output
 ![Screenshot_20231013_210047_Magic Food](https://github.com/HamzaSE007/Food-App/assets/141320468/c4dd7f10-dda1-4303-9935-176bd8aefd6c)
 ![Screenshot_20231013_210039_Magic Food](https://github.com/HamzaSE007/Food-App/assets/141320468/2dbb7dca-d3fd-4466-9875-588c81827f1d)
 ![Screenshot_20231013_210054_Magic Food](https://github.com/HamzaSE007/Food-App/assets/141320468/4a5cf5e3-02f1-49b0-9082-3d497777c402)
